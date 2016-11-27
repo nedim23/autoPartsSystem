@@ -26,14 +26,6 @@ module.exports = function(sequelize, DataTypes) {
         phoneNumber: {
             type: DataTypes.STRING,
             allowNull: true
-        },
-        dateCreated: {
-            type: DataTypes.DATE,
-            allowNull: true
-        },
-        dateModified: {
-            type: DataTypes.DATE,
-            allowNull: true
         }
     }, {
         tableName: 'contact',

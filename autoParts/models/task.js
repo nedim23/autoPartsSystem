@@ -15,13 +15,9 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: true
         },
-        dateCreated: {
-            type: DataTypes.DATE,
-            allowNull: true
-        },
-        dateModified: {
-            type: DataTypes.DATE,
-            allowNull: true
+        status: {
+            type: DataTypes.STRING,
+            allowNull: false
         }
     }, {
         tableName: 'task',

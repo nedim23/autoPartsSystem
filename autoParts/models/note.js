@@ -14,14 +14,6 @@ module.exports = function(sequelize, DataTypes) {
         body: {
             type: DataTypes.STRING,
             allowNull: true
-        },
-        dateCreated: {
-            type: DataTypes.DATE,
-            allowNull: true
-        },
-        dateModified: {
-            type: DataTypes.DATE,
-            allowNull: true
         }
     }, {
         tableName: 'note',
