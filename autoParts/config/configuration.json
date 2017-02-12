@@ -4,6 +4,8 @@
     "authToken": "KNA3XtsMNqrWPsJ4G4xu8bbqU4H5s47U"
   },
   "postgres": {
-    "connectionString": "postgres://postgres:postgres@localhost:5432/autopartsdb"
+    "connectionString": "postgres://postgres:postgres@localhost:5432/autopartsdb",
+    "myProperty": "Nisam ovo trebao mjenjati",
+    "anotherProperty": "Test2"
   }
 }
