@@ -4,10 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var _ = require('lodash');
 
-var index = require('./routes/index');
-var users = require('./routes/users');
-var task = require('./routes/task');
+var index = require('./routes/index'),
+    users = require('./routes/users'),
+    task = require('./routes/task'),
+    images = require('./routes/images');
 
 var app = express();
 
@@ -23,9 +25,22 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//routes validations
+
+// app.use(function (req, res, next){
+//   console.log("req url: ", req.originalUrl);
+//   if (_.includes(req.originalUrl, '/') || _.includes(req.originalUrl, '/bee/sendmsg')
+//       || _.includes(req.originalUrl, '/activation') || _.includes(req.originalUrl, '/registereduser')) {
+//     next();
+//   } else {
+//     res.status(401).send({error: "Access denied"})
+//   }
+// });
+
 app.use('/', index);
 app.use('/users', users);
 app.use('/', task);
+app.use('/', images);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
