@@ -9,5 +9,7 @@
     "anotherProperty": "Test2",
     "connectionString": "postgres://postgres:postgres@localhost:5432/autopartsdb",
     "test": "Test123"
+    "anotherProperty": "Test2",
+    "testDev3": "testdev3"
   }
 }
