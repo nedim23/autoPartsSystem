@@ -6,6 +6,7 @@
   "postgres": {
     "connectionString": "postgres://postgres:postgres@localhost:5432/autopartsdb",
     "myProperty": "Nisam ovo trebao mjenjati",
-    "anotherProperty": "Test2"
+    "anotherProperty": "Test2",
+    "testDev3": "testdev3"
   }
 }
