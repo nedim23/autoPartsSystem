@@ -8,6 +8,7 @@
     "myProperty": "Nisam ovo trebao mjenjati",
     "anotherProperty": "Test2",
     "connectionString": "postgres://postgres:postgres@localhost:5432/autopartsdb",
-    "test": "Test123"
+    "test": "Test123",
+    "test1": "test1234"
   }
 }
